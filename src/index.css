@@ -1,0 +1,74 @@
+/* src/index.css */
+
+body {
+    margin: 0; /* Important: Remove default body margin */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* --- SVG Background --- */
+    background-color: #0a0a0a; /* Very dark fallback color */
+  
+    /* --- Choose ONE of the background-image options below --- */
+  
+    /* Option A: External SVG File (Recommended) */
+    /* Make sure 'background-pattern.svg' is in your public folder */
+    background-image: url('/background-pattern.svg');
+    background-size: 40px 40px; /* Adjust to match your SVG pattern's intended size */
+  
+    /* Option B: Inline SVG Data URI (Example: subtle dots) */
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Crect width='8' height='8' fill='%23111111'/%3E%3Ccircle fill='%23282828' cx='4' cy='4' r='1'/%3E%3C/svg%3E"); */
+    /* background-size: 8px 8px; */ /* Adjust size for inline SVG */
+  
+  
+    /* --- Common Background Properties --- */
+    background-repeat: repeat;       /* Tile the pattern */
+    background-attachment: fixed;    /* Keep the pattern fixed while scrolling content */
+    color: #f8f9fa;                  /* Default light text color for contrast */
+  }
+  
+  /* Ensure your main app container doesn't have an opaque background
+     that hides the body background. */
+  .app-container {
+    /* background-color: #212529; */ /* Remove or comment out opaque background */
+    background-color: transparent; /* Allow body background to show through */
+    min-height: 100vh; /* Ensure it takes full height */
+  }
+  
+  /*
+     Optional: Adjust section backgrounds if needed.
+     You might want sections to have a slightly transparent dark background
+     on top of the pattern, instead of being fully transparent or fully opaque.
+  */
+  .hero-section-class, /* Add specific classes or target components if needed */
+  .about-section-class,
+  .skills-section-class,
+  .projects-section-class,
+  .contact-section-class {
+    /* Example: Slightly transparent dark background */
+    /* background-color: rgba(25, 28, 31, 0.9); */
+    /* Or make them fully transparent if you removed their bg-* classes */
+     background-color: transparent;
+  }
+  
+  /* Ensure cards or specific elements still have their desired backgrounds */
+  .card.bg-secondary {
+    background-color: #343a40 !important; /* Keep card background */
+  }
+  .card.bg-dark {
+     background-color: #212529 !important;
+  }
+  /* Add other overrides as necessary */
+  
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  /* Add smooth scrolling if you haven't already */
+  html {
+    scroll-behavior: smooth;
+  }

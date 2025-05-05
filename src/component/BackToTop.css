@@ -1,0 +1,39 @@
+/* src/components/BackToTopButton.css */
+
+.back-to-top-button {
+    position: fixed; /* Keep it in place during scroll */
+    bottom: 30px; /* Adjust distance from bottom */
+    right: 30px; /* Adjust distance from right */
+    z-index: 1050; /* Ensure it's above most other content (Bootstrap modals are often ~1040/1050) */
+  
+    /* Styling */
+    background-color: #0d6efd; /* Bootstrap primary blue, or your theme's color */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Make it circular */
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    font-size: 1.2rem; /* Adjust icon size */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional subtle shadow */
+  
+    /* Centering the icon */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Smooth appearance/disappearance (optional, as we use conditional rendering) */
+    /* transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible; */
+  }
+  
+  .back-to-top-button:hover {
+    background-color: #0b5ed7; /* Darker shade on hover */
+  }
+  
+  /* If you prefer CSS transitions over conditional rendering (not needed with the JS logic above) */
+  /* .back-to-top-container .hidden {
+    opacity: 0;
+    visibility: hidden;
+  } */

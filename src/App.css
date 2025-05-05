@@ -1,0 +1,52 @@
+
+#app {
+    background-color:color-mix(in srgb, black 90%, rgb(52, 62, 197) 10%);
+    color: #f8f9fa; 
+  }
+  
+  /* Ensure containers don't have extra padding if fluid is used extensively */
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  /* Add smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Style links */
+  a {
+    transition: color 0.2s ease-in-out;
+  }
+  
+  /* Specific tweaks if needed */
+  .bg-secondary {
+    background-color: #343a40 !important; /* Slightly darker secondary */
+  }
+  
+  .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #adb5bd;
+    opacity: 1; /* Firefox */
+  }
+  
+  .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #adb5bd;
+  }
+  
+  .form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #adb5bd;
+  }
+  
+  .text-primary {
+      color: #0d6efd !important; 
+  }
+  
+  .text-info {
+      color: #0dcaf0 !important; 
+  }
+  .text-warning {
+      color: #ffc107 !important; 
+  }
+  
+  /* Add more custom styles as needed */
